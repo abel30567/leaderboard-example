@@ -1,0 +1,19 @@
+{
+  "name": "orivalentine",
+  "version": "1.0.0",
+  "description": "Tangle scavenger hunt",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "null"
+  },
+  "author": "Claudio",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  }
+}

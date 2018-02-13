@@ -9,12 +9,12 @@
 
     <link href="https://fonts.googleapis.com/css?family=Galada|Ubuntu:400,500,700" rel="stylesheet">
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/send.css" rel="stylesheet">
 
-    <script src="https://code.jquery.com/jquery-2.2.2.min.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/iota.min.js"></script>
 
     <script type="text/javascript" src="js/helpers/updateBalanceHTML.js"></script>
@@ -24,7 +24,7 @@
 <body>
     <main>
         <header class="header">
-            <p class="header__title">My <span><img class="header__logo" src="images/logo.png" /></span> Leaderboard</p>
+            <a href="index.html"> <p class="header__title">My <span><img class="header__logo" src="images/logo.png" /></span> Leaderboard</p></a>
             <nav>
                 <div class="nav-right hidden-xs">
                     <div class="button" id="btn">
@@ -65,7 +65,7 @@
                         <div class="col-xs-12">
                             <div class = "form-group">
                                 <label for="address">Recipient Address</label>
-                                <input type="text" class="form-control" id="address" placeholder="IOTA address of recipient">
+                                <input type="text" class="form-control" id="address" value="HFSBZCQDGQRDHPVXSAJGLMNTYOESPVJXDWOAKZCPSUEPXKHZB9BPLM9UHFESZJQOILPUDLOOKIXRFJYKCDSSBBBZFY">
                             </div>
                         </div>
 
@@ -116,7 +116,7 @@
                     <div class="collapse" id="setSeed">
                         <div class="well" id="enterSeed">
                             <div class="form-group">
-                                <input type="password" id="userSeed" class="form-control" placeholder="Your Seed">
+                                <input type="password" id="userSeed" class="form-control" value="L9JORODHPJCGFQPHDDXXMONJGBTWWZFBGACTZCLPJDCXQVIVRBSNPXIMJIUSCJVWDUORBCPNNEJAGJVOS">
                             </div>
                             <button type="button" id="seedSubmit" class="btn btn-default">Submit</button>
                         </div>
