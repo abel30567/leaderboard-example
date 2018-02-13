@@ -24,7 +24,7 @@
 <body>
     <main>
         <header class="header">
-           <a href="index.html"> <p class="header__title">My <span><img class="header__logo" src="images/logo.png" /></span> Love</p></a>
+           <p class="header__title">My<span><img class="header__logo" src="images/logo.png" /></span>Love </p>
             <nav>
                 <div class="nav-right hidden-xs">
                     <div class="button" id="btn">
@@ -40,17 +40,17 @@
             <table class="table-fill">
                 <thead>
                     <tr>
-                        <th class="rank__title">Rank</th>
-                        <th class="address__title">Name</th>
-                        <th class="amount__title">Message</th>
-                        <th class="full__title">Value</th>
+                        <th class="rank__title">Message #</th>
+                        <th class="address__title">Place</th>
+                        <th class="amount__title">Clue</th>
+                        <th class="full__title">IOTA sent</th>
                     </tr>
                 </thead>
                 <tbody id="leaderboard">
                     <tr>
                         <td class="iota__rank"></td>
                         <td class="iota__name"></td>
-                        <td class="iota__message">Nothing here right now. Generate an address and tell someone (or you yourself) to send a transaction with a message to it.</td>
+                        <td class="iota__message">Scan your QR code to get clue.</td>
                         <td class="iota__value"></td>
                     </tr>
                 </tbody>
@@ -59,37 +59,16 @@
     </main>
 
     <!-- Sidebar -->
-        <ul class="options">
-            <li>
+        <div class="options">
+        
                 
                         <div class="form-group">
                             <label>Seed</label>
-                            <input type="password" id="userSeed" class="form-control" placeholder="Insert Seed">
+                            <input type="password" id="userSeed" class="form-control" placeholder="Insert Seed" value="<%= seed %>">
                         </div>
                         <button type="button" id="seedSubmit" class="btn btn-default">Submit</button>
                  
-            </li>
-            <li class="sidebar-item">
-                <a href="#" class="sidebar-anchor" data-toggle="collapse" data-target="#getAddresses" aria-expanded="false" aria-controls="getAddresses">My Addresses</a>
-                <div class="collapse" id="getAddresses">
-                    <div class="genAddress__div">
-                        <div id="overlay">
-                            <div class="panel panel-danger">
-                                <div class="panel-heading">Generating Address</div>
-                                <div class="panel-body">
-                                    <p>Currently generating your address. This can take anywhere between 1 - 20minutes so be patient. Once your address was generated this note will disappear.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="button" id="genAddress" class="btn btn-success">Generate Address</button>
-                        <div id="allAddresses">
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="sidebar-item">
-                <button type="button"  class="btn btn-success"><a href="send.html">Send Transaction</a></button>  
-            </li>
-        </ul>
+            
+        </div>
 </body>
 </html>

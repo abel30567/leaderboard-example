@@ -4,8 +4,8 @@ $(document).ready(function() {
     //  Instantiate IOTA
     //
     var iota = new IOTA({
-        'host': 'http://iota.teamveno.eu',
-        'port': 14265
+        'host': 'https://iotanode.us',
+        'port': 443
     });
 
     var seed;

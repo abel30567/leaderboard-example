@@ -12,13 +12,17 @@ app.use(require("body-parser").urlencoded({extended: true}));
 
 // 
 app.get('/', function(req, res) {
-   res.render('index.ejs');
+   res.json("Go to other route");
 });    
+app.get('/:seed', function(req, res) {
+    var seed = req.params.seed;
+    res.render('index', {seed:seed});
+ });    
 
 
 var PORT = 3000;
 
-app.listen(PORT, function(err, res) {
+app.listen(PORT, function(err) {
     if (err) {
         throw err;
     }
